@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlannerScheduler", "PlannerScheduler.csproj", "{C16A5905-4CE1-4F27-8735-86253F453652}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C16A5905-4CE1-4F27-8735-86253F453652}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16A5905-4CE1-4F27-8735-86253F453652}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16A5905-4CE1-4F27-8735-86253F453652}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16A5905-4CE1-4F27-8735-86253F453652}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10B4DA01-A983-4B22-8F63-F4AA65FE963B}
+	EndGlobalSection
+EndGlobal
