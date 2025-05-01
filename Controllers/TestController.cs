@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
 
 namespace PlannerScheduler.Controllers
 {
+    // Test controller for connecting to Railway platform
     [Route("[controller]")]
     [ApiController]
     public class TestController : ControllerBase
@@ -15,9 +17,17 @@ namespace PlannerScheduler.Controllers
 
         // GET <TestController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<string> Get(int id)
         {
-            return "value";
+            HttpClient client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
+            client.DefaultRequestHeaders.Add("User-Agent", ".NET Foundation Repository Reporter");
+
+            var json = await client.GetStringAsync("https://leeon.up.railway.app/api/test");
+
+            return json;
         }
 
         // POST <TestController>
